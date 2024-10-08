@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- estilos -->
+
+    <!-- link de boostrap por CDN
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    -->
+
+        <link href="./bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        caja1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            border: 1px solid black;
+            height: 200px;
+            align-items: start;
+        }
+        .parrafo{
+            justify-content: space space-around;
+            align-items: flex-end;
+        }
+        .textos{
+            display: flex;
+            justify-content: space-around;  
+            border: 1px solid black;
+            height: 200px;
+            align-items: baseline;
+        }
+        
+        .color-rojo{
+            background-color: red;
+            width: 50%;
+        }
+        .color-verde{
+            background-color: green;
+            width: 50%;
+        }
+        .color-amarillo{
+            background-color: yellow;
+            width: 50%;
+        }
+        .caja-justificada{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .color-azul{
+            background-color: blue;
+            width: 50%;
+        }
+        .colores{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 300px;
+            height: 200px;
+            align-items: center;
+        }
+        .colores2{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            height: 200px;
+            width: 300px;
+            border: 1px solid black;
+            align-content: center;
+            text-align: center;
+        }
+        .colores3{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 200px;
+            width: 300px;
+            border: 1px solid black;
+            align-content: space-around;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- scripts -->
+    <!-- <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/app.js"></script> -->
+    <h1>Aplicación 1</h1>
+    
+    <div class="caja1">
+        <button type="button">base class</button>
+        <button type="button">primary</button>
+        <button type="button">Secondary</button>
+    </div>
+
+    <div class="parrafo">
+        <p>Parrafo 1</p>
+        <p>Parrafo 2</p>
+        <p>Parrafo 3</p>
+    </div>
+
+    <section class="textos">
+        <h2>Titulo 2</h2>
+        <h3>Titulo 3</h3>
+        <span>Texto pequeño</span>
+    </section>
+
+    <div class="colores">
+        <div class="color-rojo">
+            Rojo
+        </div>
+        <div class="color-verde">
+            Verde
+        </div>
+        <div class="color-amarillo">
+            Amarillo
+        </div>
+    </div>
+
+    <div class="caja-justificada">
+        <div style="width: 50px; height: 50px; background-color: red;">Rojo</div>
+        <div style="width: 50px; height: 50px; background-color: green;">Verde</div>
+        <div style="width: 50px; height: 50px; background-color: blue;">Azul</div>
+        <div style="width: 50px; height: 50px; background-color: yellow;">Amarillo</div>
+
+    </div>
+
+    <!-- La propiedad align-content en HTML se usa para 
+    alinear el espacio entre y alrededor de los 
+    elementos dentro de un contenedor flexible o de 
+    una cuadrícula, según el eje transversal o 
+    secundario. Esta propiedad solo tiene efecto 
+    cuando hay más de una línea de elementos en el 
+    contenedor1. -->
+    <p>Colores 2</p>
+    <div class="colores2">
+        <div class="color-rojo">
+            Rojo
+        </div>
+        <div class="color-verde">
+            Verde
+        </div>
+        <div class="color-azul">
+            Azul
+        </div>
+        <div class="color-amarillo">
+            Amarillo
+        </div>
+    </div>
+
+    <p>Colores 3</p>
+    <div class="colores3">
+        <div class="color-rojo">
+            Rojo
+        </div>
+        <div class="color-verde">
+            Verde
+        </div>
+        <div class="color-amarillo">
+            Amarillo
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif,Arial, Helvetica;
+}
+.container{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    border: 1px solid lightgrey 0.8; 
+    box-shadow: 0px 0px 10px gray;
+    margin: 40px 0px 40px;
+    min-height: 600px;
+}
+.container__header{
+    /* Añadir aquí Flex y Align y/o justify */
+
+
+    height: 120px;
+    border-bottom: 1px solid rgba(226,225,226, 0.8);    
+}
+
+.container__logo{
+    /* Añadir aquí Flex */
+    
+    padding: 10px;
+    margin-left: 20px;
+    color: black;
+    text-shadow: 1px 1px 0px gray;
+    text-transform: uppercase;
+}
+/* flex-grow: 0  --> valor por defecto y así cada caja ocupa el espacio que toque. */
+/* flex-grow: 1  --> cada elemento ocupa el mismo espacio del tamaño disponible. */
+.container__logo h1{
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.header__menu{
+    /* Añadir aquí Flex */
+
+
+    height: 100%;
+}
+.menu__list{
+    /* Añadir aquí Flex y Align y/o justify */
+
+
+    height: 100%;
+    list-style: none;
+}
+.menu__list a{
+    text-transform: uppercase;
+    color: gray;
+    font-weight: blod;
+    letter-spacing: 1px;
+    padding: 15px;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+}
+.menu__list a:hover{
+    background-color: #ccc;
+    color: white;
+}
+/* contenido */
+.content{
+    /* Añadir aquí Flex y Align y/o justify */
+
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.content__projects{
+    /* Añadir aquí Flex y Align y/o justify */
+
+
+}
+.projects__project{
+    /* Añadir aquí Flex */
+
+
+    margin-bottom: 25px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+}
+.projects__project img{
+    width: 100%;
+}
+.projects__project-info{
+    padding: 10px;
+}
+.projects__project-info a{
+    font-size: 16px;
+    color: black;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+}
+.projects__project-info a:hover{
+    color: green;
+}
+.projects__project-info p{
+    font-size: 16px;
+    color: gray;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+}
+/* barra lateral */
+.content__lateral{
+    /* Añadir aquí Flex */
+
+
+    margin-right: 30px;
+    padding: 15px;
+}
+.lateral__title{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 100;
+    color: #444;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(226,225,226, 0.8);
+    text-align: center;
+}
+.lateral__list{
+    list-style: none;
+}
+.lateral__list li{
+    padding-bottom: 10px;
+}
+.lateral__list a{
+    display: block;
+    padding: 20px;
+    background-color: #eee;
+    color: #444;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.lateral__list a:hover{
+    background-color: #444;
+    color: white;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+/* Footer */
+.content__footer{
+    /* Añadir aquí Flex y Align y/o justify */
+
+
+    height: 120px;
+    border-top: 1px solid rgba(226,225,226, 0.8);
+}
+.footer__logoFooter{
+    /* Añadir aquí Flex y order */
+
+
+    padding: 10px;
+    margin-left: 20px;
+    font-family: Helvetica, Arial,  sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px;
+    color: black;
+    text-shadow: 1px 1px 0px gray;
+    text-transform: uppercase;
+    opacity: 0.5;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.footer__info{
+    /* Añadir aquí Flex y Order */
+
+    opacity: 0.7;
+    margin-left: 20px;
+}

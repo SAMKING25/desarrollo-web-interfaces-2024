@@ -1,0 +1,82 @@
+html{
+    background-color: #cceeff;
+}
+.foto-dni {
+    float: left;
+    width: 418px;
+    padding-left: 25px;
+}
+
+.cabeza {
+    font-size: 250%;
+}
+
+.nombre {
+    padding-left: 550px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.correo {
+    padding-left: 50px;
+    padding-right: 80px;
+}
+
+.logo {
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+.indice {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 160px;
+    height: 60px;
+    font-size: 25px;
+    color: #fddcf9;
+    background-color: #600271;
+}
+
+.apartados {
+    font-size: 60px;
+    margin-left: 30px;
+    color: #013955;
+}
+
+h2.apartados {
+    font-size: 48px;
+    margin-left: 50px;
+}
+
+.textos_ap {
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+.ciudades {
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    color: #022435;
+
+}
+
+div.galeria {
+    margin: 50px;
+    float: left;
+    width: 180px;
+}
+
+.volver {
+    float: right;
+    width: 160px;
+    height: 60px;
+    font-size: 25px;
+    color: #fddcf9;
+    background-color: #600271;
+}
