@@ -1,0 +1,64 @@
+/* reseteo de estilos */
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana,Tahoma, sans-serif;
+}
+
+.container{
+    border: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.container__layout{
+}
+
+.layout__box{
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.layout__box--red{
+    background-color: red;
+    color: white;
+}
+.layout__box--blue{
+    background-color: blue;
+    color: white;
+}
+.layout__box--yellow{
+    background-color: yellow;
+    color: white;
+}
+.layout__box--green{
+    background-color: green;
+    color: white;
+}
+.layout__box--orange{
+    background-color: orange;
+    color: white;
+}
+.layout__box--pink{
+    background-color: pink;
+    color: white;
+}
+.layout__box--salmon{
+    background-color: salmon;
+    color: white;
+}
+.layout__box--black{
+    background-color: black;
+    color: white;
+}
+.layout__box--yellowgreen{
+    background-color: yellowgreen;
+    color: white;
+}
+.layout__box--cyan{
+    background-color: cyan;
+    color: white;
+}
