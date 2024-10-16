@@ -13,6 +13,13 @@
     text-align: center;
 }
 .container__layout{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-columns: calc(50% - 10px) calc(25% - 10px) calc(25% - 10px); */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .layout__box{
@@ -25,18 +32,22 @@
 .layout__box--red{
     background-color: red;
     color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
 }
 .layout__box--blue{
     background-color: blue;
     color: white;
+    grid-column: 3 / 5;
 }
 .layout__box--yellow{
     background-color: yellow;
-    color: white;
+    color: black;
 }
 .layout__box--green{
     background-color: green;
-    color: white;
+    color: black;
 }
 .layout__box--orange{
     background-color: orange;
@@ -48,17 +59,24 @@
 }
 .layout__box--salmon{
     background-color: salmon;
+    grid-column: 1 / 5;
     color: white;
 }
 .layout__box--black{
     background-color: black;
     color: white;
+    grid-row-start: 3;
+    grid-row-end: 5;
 }
 .layout__box--yellowgreen{
     background-color: yellowgreen;
-    color: white;
+    color: black;
+    grid-row-start: 3;
+    grid-row-end: 5;
 }
 .layout__box--cyan{
     background-color: cyan;
-    color: white;
+    color: black;
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
 }

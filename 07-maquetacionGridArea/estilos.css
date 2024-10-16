@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+/* Maquetación
+        CABECERA    (arriba del todo y que ocupe el 100%)
+             Título
+        MENÚ        (debajo de la cabecera y que ocupe el 100%)
+        CONTENIDO   (debajo del menú y que ocupe el 80%)
+        LATERAL     (debajo del menú y a la derecha del contenido)
+        FOOTER      (abajo del todo y ocupe el 100%)
+ */
+
+.website{
+    display: grid;
+    /* grid-template-columns: 80% 20%; */
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 120px 70px 2fr 70px;
+
+}
