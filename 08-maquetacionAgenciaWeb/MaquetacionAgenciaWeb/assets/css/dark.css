@@ -1,0 +1,55 @@
+/* Definición Variables modo Oscuro
+ definimos familia de fuente que voy a utilizar */
+ :root{
+    --mx-width: 1320px;
+
+}
+body{
+
+}
+.banner__btn{
+
+}
+.menu__navbar--fixed{
+
+}
+.services__service{
+
+}
+.project__content{
+
+}
+.project__title:hover{
+
+}
+.layout__contact::before{
+
+}
+.contact__subtitle{
+
+}
+.contact__btn{
+
+}
+.fleft__group{
+
+}
+.fleft__form-control{
+
+}
+.review__description,
+.author__name,
+.new__more{
+
+}
+.nav__submenu{
+
+}
+
+.widget__link:hover{
+
+}
+
+.menu-mobile{
+
+};

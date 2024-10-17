@@ -1,0 +1,48 @@
+@media (min-width: 1600px){
+    /* body{
+        background-color: red;
+    } */
+
+}
+
+@media (min-width: 1199px) and (max-width: 1400px){
+    /* body{
+        background-color: red;
+    } */
+
+}
+
+@media (max-width: 1199px){
+    /* body{
+        background-color: yellow;
+    } */
+
+}
+
+@media (max-width: 1000px){
+    /* body{
+        background-color: green;
+    } */
+
+}
+
+@media (max-width: 850px){
+    /* body{
+        background-color: cyan;
+    } */
+
+}
+@media (max-width: 700px){
+
+}
+@media (max-width: 600px){
+    /* oculto el menú de escritorio y habilito el botón y menú de responsivo */
+
+}
+
+@media (max-width: 550px){
+    /* body{
+        background-color: grey;
+    } */
+
+}

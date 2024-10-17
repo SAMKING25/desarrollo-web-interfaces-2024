@@ -1,0 +1,972 @@
+/* Iniciamos estilos personalizados  */
+/* Definición Variables
+ definimos familia de fuente que voy a utilizar */
+:root{
+    --mx-width: 1320px;
+    --color-text-body:  #525260; /* cambio de black a este color */
+    --color-primary: #5956e9;
+    --color-secondary: #fff;
+    --color-banner: #2522BA;
+    --color-text-btn: #0d6efd;
+    --colog-bg-btn: #ffdc60;
+    --color-subtitle: #c75c6f;
+    --color-title: #292930;
+    --color-bg-services: #f8f8f8;
+    --color-bg-projects: #ecf2f6;
+    --color-bg-dark: #27272E;
+    --color-text-description: #99A1AA;
+    --color-hover-dark: #303035;
+    --color-borders: #e3e6e9;
+}
+
+
+/* Estilos Generales */
+html{
+    /* para un tema de accesibilidad y poder trabajar con rem */
+    /* font-size: 10px; */
+    /* Accesibilidad,... si el usuario nos cambia el tamaño de fuente */
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem; /* serán 16px porque he asignado font-size a 10px */
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400; /* grosor de la fuente, +/- tamaño normal */
+    line-height: 1.5;
+    color: var(--color-text-body);
+}
+
+/* Estructura */
+/* a nivel de layout toda mi arquitectura está definida en 1 única columna
+No es necesario flotar los elementos (ni con float, flex, grid, grid-areas */
+.layout{
+    width: 100%;
+    min-width: var(--mx-width);
+}
+
+/* Estilos menú navegación */
+.layout__menu{
+    width: 100%;
+    padding: 3.5rem 3rem; /* padding superior y lateral */
+}
+.menu__navbar{
+    /* Flex + aling/justify */
+
+}
+
+.navbar__logo{
+    width:187px; /* no utilizo rem para que se mantenga el tamaño */
+}
+.nav__list{
+    /* Flex + aling/justify */
+}
+.nav__item{
+    /* position */
+
+    margin: 0 2.4rem;
+}
+.nav__title{
+    /* position */
+    
+    line-height: 6rem;
+    font-weight: 500;
+    color: var(--color-text-body);
+    transition: all 300ms ease-in-out;
+}
+.nav__icon{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 0.2rem; /* margen interior con la opción del menú */
+    vertical-align: middle;
+}
+
+/* efecto */
+.nav__title:hover{
+
+}
+
+
+.nav__submenu{
+    /* position */
+    
+    
+    min-width: 19rem;
+    padding: 1.5rem 1rem;
+    background-color: var(--color-secondary);
+    box-shadow: 0px 13px 48px 0 rgba(0,0,0,15%);
+    
+    /* visibility, opacity y efecto */
+
+}
+
+.submenu__item{
+    /* efecto */ 
+}
+
+/* efecto */
+
+
+.submenu__title{
+    /* position */ 
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--color-text-body);
+    padding: 0.7rem 1.5rem;
+    /* efecto */
+
+}
+
+/* efectos varios */
+
+
+
+
+/* Estilos para el Banner */
+.layout__banner{
+    /* position */
+
+    min-height: 60rem;
+    /*border: 2px solid red; */
+    margin: 0 3rem;
+    padding-right: 0;
+    padding-left: 10rem;
+    padding-top: 15rem;
+    padding-bottom: 20rem;
+    border-radius: 60px;
+    background-color: var(--color-banner);
+    z-index: 1;
+    overflow: hidden;
+}
+.banner__content{
+    /* position */
+
+
+    width: 50%;
+    padding: 0 1.5rem;
+    z-index: 3;
+}
+.banner__title{
+    font-size: 8rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+.banner__btn{
+    display: inline-block;
+    padding: 2.8rem 4.5rem;
+    border-radius: 20px;
+    background-color: var(--color-secondary);
+    color: var(--color-text-btn);
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    text-align: center;
+    box-shadow: 0px 45px 70px -25px var(--color-primary);
+    /* efecto */
+}
+/* efecto */
+
+
+.shapes__item{
+    /* position y z-index */
+    
+    pointer-events: none;
+}
+.shapes__item--shape1{
+    /* position y animación */
+}
+
+.shapes__item--shape2{
+    /* position y animación */
+}
+
+.shapes__item--shape3{
+    /* position y animación */
+}
+
+.shapes__item--shape4{
+    /* position y animación */
+}
+.shapes__item--shape4 .shapes__img{
+    opacity: 0.5;
+    width: 7.5rem;
+}
+
+
+.shapes__item--shape5{
+    /* position y animación */
+}
+
+.shapes__item--shape6{
+    /* position y animación */
+}
+.shapes__item--shape7{
+    /* position y animación */
+}
+
+/* Estilos sección Servicios */
+.layout__services{
+    /* position y z-index */
+
+    margin: 14rem 10rem;
+    margin-bottom: 4rem;
+    /* border: 1px solid red; */
+}
+.services__container{
+    max-width: var(--mx-width);
+    margin: 0 auto;
+}
+.services__header{
+    margin-bottom: 2rem;
+    text-align: left;
+}
+.services__subtitle,
+.projects__subtitle,
+.stats__subtitle,
+.reviews__subtitle,
+.clients__subtitle,
+.news__subtitle{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-subtitle);
+    margin-bottom: 1.5rem;
+}
+.services__title,
+.projects__title,
+.stats__title,
+.reviews__title,
+.news__title{
+    font-size: 6.7rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--color-title);
+}
+.services__list{
+    /* flex */
+
+    gap: 3rem; /* separación entre los elementos */
+}
+.services__service{
+    /* flex */
+
+    height: 100%;
+    padding: 5rem 4rem;
+    margin-bottom: 4rem;
+    border-radius: 3rem;
+    background: linear-gradient(180deg, var(--color-bg-services), rgba(255,255,255,0));
+    background-color: var(--color-secondary);
+    border: 1px solid;
+    border-image-source: linear-gradient(90deg, var(--color-bg-services), rgba(255,255,255,0));
+    /* efecto */
+
+}
+
+.service__container-img{
+    margin-right: 2.5rem;
+    max-width: 8.5rem;
+    /* Relacionado con flex grow y flex basis */
+}
+.service__content{
+    /* Relacionado con flex grow y flex basis */
+}
+.service__title{
+    color: var(--color-title);
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+    /* efecto */
+}
+.service__description{
+    overflow: hidden;
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+}
+.service__more{
+    /* position */
+
+    font-weight: 500;
+    font-size: 1.7rem;
+    padding-left: 5rem;
+    /* efecto */
+}
+
+/* pseudoelemento before */
+
+.service__more:hover,
+.service__title:hover{
+    color: var(--color-primary);
+}
+.service__more:hover::before{
+    color: var(--color-primary);
+}
+
+/* para generar el escalonado de las tarjetas de servicios */
+.services__service--bottom{
+    
+}
+.services__service--middle{
+    
+}
+.services__service--top{
+    
+}
+
+/* coloco a las formas detrás de los servicios */
+.service-shapes__item{
+    /* position y z-index */
+
+    pointer-events: none;
+}
+.service-shapes--shape1{
+    /* position */
+}
+.service-shapes--shape2{
+    /* position */
+    opacity: 0.6;
+}
+.service-shapes--shape3{
+    /* position y animación */
+
+}
+
+/* Estilos para la sección de Proyectos */
+.layout__projects{
+    /* position y z-index */
+
+    background-color: var(--color-bg-projects);
+    padding: 14rem 10rem;
+
+}
+.projects__container{
+    max-width: var(--mx-width);
+    margin: 0 auto;
+}
+.projects__header{
+    margin-bottom: 4rem;
+}
+.projects__subtitle{
+    text-transform: capitalize;
+}
+.projects__categories{
+    /* Flex */
+
+    gap: 7rem;
+    margin-bottom: 5.5rem;
+}
+.categories__item{
+    /* position */
+
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.8rem 0;
+    /* efecto */ 
+
+}
+
+.projects__all{
+    /* flex */
+
+    gap: 4rem 7rem;
+}
+.projects__project{
+    width: calc(50% - 3.5rem); /* consigo que mis tarjetas tengan un tamaño variable. Facilita el responsive */
+}
+.project__container-img{
+    width: 100%;
+    border-radius: 3rem 3rem 0 0;
+    overflow: hidden;
+}
+.project__img{
+    width:100%;
+    /* efecto */
+
+}
+
+.project__content{
+    padding: 4rem 5rem;
+    background-color: var(--color-secondary);
+    border-radius: 0 0 30px 30px;
+}
+.project__title{
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--color-title);
+    margin-bottom: 1rem;
+    /* efecto */
+}
+
+.project__tags{
+    font-size: 1.7rem;
+}
+.project-shapes__item{
+    /* position y z-index */
+
+    pointer-events: none;
+}
+.project-shapes--shape1{
+    /* position */
+    
+    opacity: 0.5;
+}
+.project-shapes--shape2{
+    /* position */
+
+    opacity: 0.5;
+    /* animación */
+
+}
+.project-shapes--shape3{
+    /* position */
+
+    opacity: 0.8;
+    /* animación */
+}
+
+/* Estilos para estadísticas y Mejores clientes */
+.layout__stats,
+.layout__clients{
+    background-color: var(--color-bg-dark);
+    padding: 14rem 10rem;
+}
+.stats__container,
+.clients__container{
+    max-width: var(--mx-width);
+    margin: 0 auto;
+}
+.stats__header{
+    text-align: center !important;
+}
+.stats__title,
+.clients__title{
+    color: var(--color-secondary);
+    font-size: 6.4rem;
+    margin-bottom: 3rem;
+}
+.stats__description,
+.clients__description{
+    font-size: 2rem;
+    width: 48%;
+    margin: 0 auto 4rem;
+    color: var(--color-text-description);
+}
+.stats__progress{
+    /* Flex */
+    
+    gap: 3rem;
+}
+.stats__stat{
+    width: 25%;
+    text-align: center;
+    padding: 7rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent; /* inapreciable */
+}
+/* efecto */
+
+.stat__icon>img{
+    margin: 0 auto;
+    text-align: center;
+}
+.stat__count{
+    display:inline-block;
+    text-align: center;
+    font-size: 6.4rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+.stat__title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-secondary);
+}
+
+/* Estilos para Reseñas */
+.layout__reviews{
+    /* position y z-index */
+
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+.reviews__container{
+    /* Flex */
+
+    max-width: var(--mx-width);
+    margin: 0 auto;
+    gap: 2rem;
+}
+.reviews__header{
+    text-align: left;
+    margin-bottom: 3rem;
+}
+.reviews__description,
+.news__description{
+    margin: 2rem 0;
+    width: 50%;
+    font-size: 2rem;
+}
+.reviews__content{
+    /* Flex + align */
+
+    gap: 2rem;
+}
+.reviews__review{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.review__company{
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+.review__description{
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--color-bg-dark);
+    margin-bottom: 4rem;
+}
+.review__author{
+    /* Flex */
+
+}
+.author__container-img{
+    border-radius: 90px;
+    overflow: hidden;
+    width:10%;
+}
+.author__name{
+    display: block; /* creo un salto de línea */
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--color-bg-dark);
+    margin-bottom: 0.3rem;
+    margin-left: 2rem;
+}
+.author__description{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--color-text-description);
+    opacity: 0.9;
+    margin-left: 2rem;
+}
+.review-shapes__item{
+    /* position + z-index */
+    pointer-events: none;
+}
+
+/* Estilos zona Mejores Clientes */
+.layout__clients{
+    /* position + z-index */
+
+}
+.clients__header{
+    text-align: left;
+}
+.clients__title{
+    width: 50%;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.clients__description{
+    width: 40%;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 6rem;
+}
+.clients__logos{
+    /* Flex */
+
+    gap: 3rem;
+}
+.clients__item{
+    /* Flex-basis */
+
+}
+.clients__img{
+    filter: grayscale(25%);
+    opacity: 0.5;
+    /* efecto */
+}
+
+.client-shapes__item{
+    /* position + z-index */
+
+}
+
+/* Estilos últimas noticias */
+.layout__news{
+    /* position + z-index */
+
+    padding: 14rem 0;
+}
+.news__container{
+    max-width: var(--mx-width);
+    margin: 0 auto;
+}
+.news__header{
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.news__title{
+    /* color: var(--color-bg-dark); */
+    margin-bottom: 3rem;
+}
+.news__description{
+    text-align: center;
+    margin: 0 auto;
+}
+.news__list{
+    /* Flex */
+}
+.news__new{
+    /* Flex + align */
+
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-right: 2rem;
+    padding-left: 0;
+    border-top: 1px solid var(--color-borders);
+    border-bottom: 1px solid var(--color-borders);
+    /* efecto */
+
+}
+
+.news__new:last-child{
+    border-left: 1px solid var(--color-borders);
+    padding-left: 2.5rem;
+}
+.news__container-img{
+    overflow: hidden;
+    border-radius: 3rem;
+}
+.new__img{
+    border-radius: 3rem;
+
+    /* efecto */
+
+}
+
+.new__content{
+    /* flex */
+}
+.new__title{
+    font-size: 2.4rem;
+    line-height: 1.4;
+    font-weight: 700;
+    color: var(--color-title);
+    margin-bottom: 2rem;
+    /* efecto */
+
+}
+
+.new__description{
+    font-size: 1.7rem;
+    font-weight: normal;
+    color: var(--color-subtitle);
+    margin-bottom: 3rem;
+}
+.new__more{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--color-hover-dark);
+    /* efecto */
+
+}
+.new__icon{
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+.new-shapes__item{
+    /* position + z-index */
+
+}
+.new-shapes--shape1{
+    /* position */
+
+    opacity: 0.7;
+}
+.new-shapes--shape2{
+    /* position */
+
+    opacity: 0.7;
+}
+.new-shapes--shape3{
+    /* position */
+
+    opacity: 0.7;
+}
+.new-shapes--shape4{
+    /* position */
+
+    opacity: 0.7;
+}
+
+/* Estilos para la sección de Contacto */
+.layout__contact{
+    /* position + z-index */
+
+    overflow: hidden;
+    padding: 0; /* inicializo a 0 */
+    padding-top: 14rem;
+    padding-bottom: 10rem;
+    /* background-color: var(--color-primary); */
+}
+/* pseudoelemento before */
+
+.contact__container{
+    max-width: var(--mx-width);
+    margin: 0 auto;
+    overflow: hidden;
+}
+.contact__header{
+    margin-bottom: 6.5rem;
+    text-align: center;
+}
+.contact__subtitle{
+    display: inline-block;
+    color: var(--colog-bg-btn);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.contact__title{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5.5rem;
+    font-size: 6.4rem;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--color-secondary);
+}
+.contact__btn{
+    display: inline-block;
+    /* position + z-index */
+
+    overflow: hidden;
+    padding: 2.3rem 5.5rem;
+    background-color: var(--color-secondary);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-align: center;
+    /* efecto */
+
+}
+
+.contact__images{
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid var(--color-borders);
+}
+.contact__thumb{
+    display: inline-block;
+}
+.contact__thumb--chat{
+    margin-right: -18rem;
+    margin-bottom: -0.8rem;
+}
+.contact__thumb--laptop{
+    /* position */
+
+}
+.contact__thumb--mobile{
+    /* position */
+}
+.backshapes__item{
+    /* position + z-index */
+}
+.backshapes--shape1{
+    /* position */
+}
+.backshapes--shape2{
+    /* position */
+
+    opacity: 0.5;
+    /* animación */
+
+}
+.backshapes--shape3{
+    /* position */
+
+    /* animación */
+
+}
+.backshapes--shape4{
+    /* position */
+
+    /* animación */
+    
+}
+.backshapes--shape5{
+    /* position */
+
+    /* animación */
+    
+}
+.backshapes--shape6{
+    /* position */
+
+    /* animación */
+    
+}
+.backshapes--shape7{
+    /* position */
+
+    /* animación */
+    
+}
+
+/* Estilos del Pié de Página */
+.layout__footer{
+    padding-top: 1rem;
+}
+.footer__container{
+    max-width: var(--mx-width);
+    margin: 0 auto;
+}
+.footer__top{
+    padding-bottom: 4rem;
+}
+.footer__social{
+    /* flex + justify + align */
+
+}
+.social__img{
+    display: inline-block;
+    color: var(--color-text-description);
+    font-size: 3rem;
+    padding: 0.5rem;
+    /* efecto */
+
+}
+
+.footer__main{
+    /* flex */
+}
+.footer_fleft{
+    /* flex */
+}
+.fleft__container{
+    border-right: 1 px solid var(--color-borders);
+    padding-right: 8rem;
+    margin-right: 4rem;
+    margin-bottom: 8rem;
+}
+.fleft__title{
+    display: inline-block;
+    font-size: 6.4rem;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--color-title);
+    margin-bottom: 2rem;
+}
+.fleft__subtitle{
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+}
+.fleft__group{
+    /* position */
+
+    /* flex + align */
+
+    background-color: var(--color-secondary);
+    border-radius: 20px;
+    height: 7.2rem;
+    padding: 1rem;
+    box-shadow: 0 24px 48px -15px var(--color-borders);
+    
+}
+.fleft__mail-icon{
+    display: inline-block;
+    margin-left: 2rem;
+}
+.fleft__form-control{
+    /* position */
+
+    /* flex */
+
+    display: block;
+    padding: 0.5rem 1.5rem;
+    height: auto;
+    border: none;
+    outline: none;
+    color: var(--color-title);
+    margin-left: 1rem;
+}
+.fleft__btn{
+    cursor: pointer;
+    height: 5.2rem;
+    border: none;
+    outline: none;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-radius: 16px;
+    padding: 1rem 3rem;
+    /* efecto */
+}
+
+.footer__fright{
+    /* flex */
+
+}
+.footer__widget{
+    /* flex-basis */
+
+}
+.widget__title{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-title);
+    margin-bottom: 3rem;
+}
+.widget__link{
+    font-size: 1.8rem;
+    padding: 0.8rem 0;
+    display: inline-block;
+    /* efecto */
+}
+
+.footer__bottom{
+    /* flex */
+
+    border-top: 1px solid var(--color-borders);
+    padding: 2.5rem 0;
+    
+}
+.footer__copyright{
+    /* flex-basis */
+}
+.copyrigth__text{
+    display: inline-block;
+    color: var(--color-text-body);
+}
+.copyrigth__text > a{
+    display: inline;
+}
+.footer__links{
+    /* flex-basis */
+}
+.footer__flinks{
+    /* position */
+
+    /* flex */
+
+    gap: 2rem;
+}
+.flinks__title{
+    /* efecto */
+}
+
+/* pseudoelemento after */
+
