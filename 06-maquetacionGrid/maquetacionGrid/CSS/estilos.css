@@ -1,0 +1,251 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Arial, Helvetica;
+}
+.container{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    border: 1px solid lightgrey 0.8;
+    box-shadow: 0px 0px 10px gray;
+    margin: 40px 0px 40px;
+    min-height: 600px;
+}
+
+.container__header{
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    /* grid-template-columns: 70% 20%; */
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid rgba(226,225,226, 0.8);
+}
+.container__logo{
+    padding: 10px; /* margen interior. Separa */
+    margin-left: 20px; /* separamos de la izq */
+    color: black;
+    text-shadow: 1px 1px 0px gray;
+    text-transform: uppercase;
+}
+.container__logo h1{
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 900; /* texto gordito */
+    font-size: 35px;
+}
+.container__menu{
+    height: 100%; /* que ocupe toda la altura */
+    padding-right: 20px;
+}
+.menu__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(6, 1fr); /* dejo espacio para que se alinee el menú con los proyectos */
+    /* con los 3 sig. centro todo */
+    align-items: center;
+    /* justify-content: center;
+    text-align: center; */
+    height: 100%;
+    list-style: none; /* quito los puntitos de la lista */
+}
+.menu__item a{
+    text-transform: uppercase;
+    color: gray;
+    font-weight: bold;
+    letter-spacing: 1px; 
+    padding: 15px;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+}
+.menu__item a:hover{
+    background-color: #ccc;
+    color: white;
+}
+
+/* contenido */
+.container__content{
+    display: grid;
+    grid-template-columns: 20% 1fr; /* barra lateral y proyectos */
+    align-items: start;
+    justify-content: space-between;
+    grid-column-gap: 7px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content__projects{
+    display: grid;
+    /* auto-fill incluye el contenido acorde al tamaño definido para cada proyecto */
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    align-items: start;
+}
+.projects__project{
+    margin-bottom: 25px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+}
+.projects__project img{
+    width: 100%;
+}
+.project__project-info{
+    padding: 10px;
+}
+.project__project-info a{
+    font-size: 16px;
+    color: black;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+}
+.project__project-info a:hover{
+    color: green;
+}
+.project__project-info p{
+    font-size: 16px;
+    color: gray;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+}
+
+/* barra lateral */
+.content__lateral{
+    margin-right: 30px;
+    padding: 15px;
+}
+.lateral__title{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 100;
+    color: #444;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(226,225,226, 0.8);
+    text-align: center;
+}
+.lateral__list{
+    list-style: none;
+}
+.list__item{
+    padding-bottom: 10px;
+}
+.list__item a{
+    display: block;
+    /*para poder manipularlos como quiera*/
+    padding: 20px;
+    background-color: #eee;
+    color: #444;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+.list__item a:hover{
+    background-color: #444;
+    color: white;
+    border-radius: 10%;
+}
+/* Footer */
+.container__footer{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    height: 120px;
+    align-items: center;
+    border-top: 1px solid rgba(226,225,226, 0.8);
+}
+.footer__logoFooter{
+    padding: 10px; /* margen interior. Separa */
+    margin-left: 20px; /* separamos de la izq */
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 900; /* texto gordito */
+    font-size: 35px;
+    color: black;
+    text-shadow: 1px 1px 0px gray;
+    text-transform: uppercase;
+}
+
+.footer__logoFooter{
+    order: 2;
+    opacity: 0.6;
+    text-align: left;
+    margin-right: 20px;
+}
+.footer__info{
+    order: 1;
+    opacity: 0.8;
+    margin-left: 20px;
+}
+
+/* vista móvil */
+@media (max-width: 917px){
+    .content__projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 790PX){
+    .container__content{
+        grid-template-columns: 1fr;
+    }
+    .content__lateral{
+        display: grid;
+        grid-template-rows: 35% 1fr;
+        margin: 15px;
+
+    }
+    .menu__item{
+        text-align: center;
+    }
+    .lateral__list{
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .list__item{
+        margin: 10px;
+        margin-bottom: 0px;
+    }
+    .content__projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .projects__project{
+        margin: 20px;
+    }
+}
+@media (max-width: 725PX){
+    .container__header{
+        grid-template-columns: 1fr;
+    }
+    .container__logo{
+        margin: auto;   
+    }
+    .container__menu{
+        padding-right: 0px;
+        margin: auto;   
+    }
+    .container__footer{
+        grid-template-columns: 1fr;
+    }
+    .content__projects{
+        margin-right: 0px;
+        
+    }
+    .footer__logoFooter{
+        margin: auto;
+    }
+    .footer__info{
+        margin: auto;
+        order: 2;
+    }
+}
