@@ -1,11 +1,4 @@
 @font-face {
-    font-family: "TrebuchetMS";
-    src: url("../fonts/TrebuchetMS.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: "BebasNeue";
     src: url("../fonts/BebasNeue.otf");
     font-weight: normal;
@@ -49,11 +42,11 @@ html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
-/* 
+
 body {
-    background: url("../img/pattern.png");
+    font-family: sans-serif;
 } 
-    */
+   
 
 /* wrap queremos que los elementos "hijos" dispongan de estos estilos */
 .header__wrap,
@@ -218,6 +211,19 @@ body {
 /* FIN BANNER */
 
 /* Tarjetas */
+.title__cards{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 30px;
+    font-family:serif;
+    font-weight: 100;
+    border: 1px solid #304d02;
+    font-family: "BebasNeue";
+    background-image: url(../img/ofertas-navidad.jpg);
+    background-size: 20% 100%;
+    color: var(--color-secondary);
+    text-shadow: black;
+}
 .content__cards{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -225,7 +231,6 @@ body {
 .cards__card{
     width: 200px;
     height: 360px;
-    /* border: 1px solid var(--color-backgroung); */
     box-shadow: 1px 3px 5px var(--color-focus);
     overflow: hidden;
     margin: 22px;
@@ -235,27 +240,25 @@ body {
     transition: all 500ms;
 }
 /*efecto hover en las cartas */
-
 .cards__card:hover{
     background-color: var(--color-bg);
-    box-shadow: 1px 4px 5px var(--color-focus);
     transform: scale(1.06);
 }
 
 .card__topVentas{
     height: 190px;
-    width: 500px;
-    overflow: hidden;
+    width: 190px;
+    margin: 5px;
 }
 
 .card__category{
     width: 100%;
     height: 50px;
-    font-family: "TrebuchetMS";
+    font-family: sans-serif;
     font-size: 21px;
     font-weight: bold;
     text-align: center;
-    color: var(--color-text-title);
+    color: rgb(2, 57, 2);
     transition: all 500ms;
 }
 /*efecto hover en la carta - modificamos card_category */
@@ -270,16 +273,23 @@ body {
 }
 
 .card__description{
-    font-family: "TrebuchetMS";
     text-align: center;
-    color: var(--color-text-title);
-    font-size: 14px;
+    color: rgb(238, 22, 22);
+    font-size: 24px;
     /* transición */
     animation: all 500ms linear;
 }
+.del{
+    font-size: 20px;
+    color: black;
+}
 /* efecto de hover en la carta. tocamos card__description */
 .cards__card:hover .card__description{
-    color: var(--color-secondary);
+    color: rgb(238, 22, 22);
+    animation: muestraDescripcion 500ms linear;
+}
+.cards__card:hover .del{
+    color: black;
     animation: muestraDescripcion 500ms linear;
 }
 @keyframes muestraDescripcion {
@@ -288,9 +298,13 @@ body {
     }
 }
 
-.clearfix{
-    float: none;
-    clear: both;
+/* FIN CARTAS */
+
+/* Contenido General */
+.content__general{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 1250px;
 }
 
 /* Barra lateral */
@@ -298,7 +312,6 @@ body {
     width: 300px;
     min-height: 1070px;
     font-family: "TrebuchetMS";
-    float: right;
     margin: 20px;
 }
 
@@ -307,8 +320,10 @@ body {
     width: auto;
     height: 45px;
     line-height: 49px;
-    background: url("../img/pxgray.png"), var(--color-text-white);
-    box-shadow: 0px 1px 0px var(--color-box-shadow2), 1px 2px 0px var(--color-box-shadow2), 2px 3px 0px var(--color-box-shadow2), 3px 4px 0px var(--color-box-shadow2);
+    color: var(--color-secondary);
+    background-image: url(../img/ofertas-navidad.jpg);
+    background-size: 10% 100%;
+    box-shadow: 0px 4px 5px var(--color-box-shadow2);
     font-size: 30px;
     font-family: "BebasNeue";
     font-weight: normal;
@@ -320,45 +335,6 @@ body {
 
 .lateral__title:first-child {
     margin-top: 0px;
-}
-
-.lateral__search {
-    width: 90%;
-    height: 30px;
-    margin: 10px auto;
-    background-color: var(--color-text-white);
-    border: 1px solid var(--color-backgroung);
-    border-radius: 5px;
-    box-shadow: 1px 1px 4px var(--color-backgroung) inset;
-}
-
-.lateral__search input[type="text"] {
-    width: 85%;
-    /* para que quepa el botón */
-    height: 30px;
-    border: none;
-    padding-left: 5px;
-    border-radius: 5px;
-    background-color: transparent;
-    color: var(--color-backgroung);
-    /* transición para el focus */
-}
-
-/* obtengo foco en input[type="text"] */
-
-
-.lateral__search input[type="button"],
-.lateral__search input[type="text"] {
-    height: 30px;
-    cursor: pointer;
-    font-size: 16px;
-    background-color: transparent;
-    /* para que no tenga fondo */
-    border: none;
-    /* para que se integre con el campo en sí */
-    border-left: 1px solid var(--color-backgroung);
-    color: var(--color-focus);
-    padding-left: 6px;
 }
 
 .aside-box {
@@ -393,6 +369,7 @@ body {
 
 .lateral__login .lateral-box__user,
 .lateral__login .lateral-box__password {
+    color: #104105;
     display: block;
     text-align: center;
     position: absolute;
@@ -411,175 +388,120 @@ body {
 .lateral__login input[type="button"],
 .lateral__login input[type="reset"],
 .lateral__login button {
-    /* display: block; */
-    float: left;
     text-align: center;
     width: 100px;
     height: 35px;
     margin-top: 20px;
     color: var(--color-text-white);
-    /* Degradado desde abajo - to bottom --> hacia arriba */
-    background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
-    border: 1px solid #156785;
+    background: linear-gradient(to bottom, #104105 0%, #18de11 100%);
+    border: 1px solid var(--color-primary);
     border-radius: 0px;
     cursor: pointer;
     font-size: 15px;
-    font-family: "TrebuchetMS";
     margin-left: 17px;
     margin-bottom: 20px;
-    /* transición */
 }
 
 .lateral__login input[type="submit"]:hover,
 .lateral__login input[type="button"]:hover,
 .lateral__login input[type="reset"]:hover,
 .lateral__login button:hover {
-    /* le incluyo una sombra */
+    box-shadow: 1px 3px 4px 0px rgb(80, 80, 80);
 }
 
-.lateral__login a {
+.login__submenu{
     display: block;
     text-decoration: none;
     margin-left: 18px;
     font-size: 14px;
-    color: var(--color-focus);
-}
-
-/* efecto en el .lateral__login a mediante hover */
-
-
-.lateral__social {
-    height: 220px;
-}
-
-.lateral__social a {
-    display: block;
     color: var(--color-bg);
-    text-decoration: none;
-    font-size: 30px;
-    margin-left: 20px;
+}
+
+.lateral__team{
+    height: 580px;
+}
+
+.team__member{
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 200px;
+}
+.team__member img{
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.team__member h4{
+    text-align: center;
 }
 
-.lateral__social .social__overlay {
-    display: block;
-    height: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-shadow: 0px 0px 1px var(--color-backgroung);
-    border: 3px solid var(--color-text-white);
-    box-shadow: 0px 0px 4px var(--color-backgroung);
-    background: #F4F7FE;
-    position: absolute;
-    padding: 5px;
-    margin-left: 70px;
-    margin-top: -52px;
-    cursor: pointer;
-    transform: translateX(-80%);
-    /*lo desplazo para que cuando se lance el hover se vea el movimiento de la traslación*/
-    opacity: 0;
-    /*lo oculto*/
-    /* transición el cambio */
-
-}
-
-/* efecto hover sobre el div de lateral__social */
-
+/* FIN ASIDE */
 
 /* Artículos */
-.content__articles {
-    float: left;
-    /* es necesario flotarlo puesto que he incluido el div clearfix*/
+.articles__title{
     width: 860px;
-}
-
-.content__articles h2 {
-    display: block;
-    width: 100%;
     height: 75px;
     line-height: 75px;
-    /* centra el texto */
     text-align: center;
     font-family: "BebasNeue";
     font-size: 40px;
     font-weight: normal;
     letter-spacing: 2px;
-    background: url("../img/pxgray.png"), var(--color-text-white);
-    box-shadow: 0px 1px 0px var(--color-box-shadow2), 1px 2px 0px var(--color-box-shadow2), 2px 3px 0px var(--color-box-shadow2), 3px 4px 0px var(--color-box-shadow2);
-    margin: 0px auto;
+    color: var(--color-secondary);
+    background-image: url(../img/ofertas-navidad.jpg);
+    background-size: 10% 100%;
+    box-shadow: 2px 4px 3px var(--color-box-shadow2);
     margin-top: 20px;
-    margin-bottom: 15px;
+}
+
+.content__articles{
+    margin-top: 20px;
+    height: 950px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
 .articles__article {
-    width: 98%;
-    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 5% 10% 20%;
+    width: 280px;
+    height: 580px;
+    margin: 0px 4px 8px;
     border: 1px solid var(--color-backgroung);
-    margin: 40px auto;
-    padding: 10px;
+    padding: 5px;
     font-family: "TrebuchetMS";
     background: var(--color-text-white);
     color: var(--color-bg);
     box-shadow: 1px 1px 2px var(--color-box-shadow);
 }
 
-.articles__article h4 {
-    display: block;
-    font-size: 23px;
-    margin: 3px;
+.article__img img{
+    width: 300px;
+    height: 400px;
 }
 
-.articles__article h4 a {
-    text-decoration: none;
-    color: var(--color-text-title);
-}
-
-.articles__article h4 a:hover {
-    text-decoration: underline;
-}
-
-.article__datos {
-    float: right;
-    background-color: var(--color-box-shadow2);
-    color: var(--color-text-white);
-    height: 30px;
-    line-height: 30px;
-    margin: -10px;
-    padding: 4px;
-    font-size: 13px;
-    border-radius: 0px 0px 0px 5px;
-    /* esquina inferior izq 5px */
-}
-
-.article__datos span {
-    margin: 6px;
-}
-
-.article__datos p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-
-.articles__blog {
-    height: 100px;
-    margin-top: 60px;
-    line-height: 100px;
+.article__name{
+    width: 100%;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 21px;
+    font-weight: bold;
     text-align: center;
-    font-family: "BebasNeue";
-    /* transición */
-
+    color: black;
+    transition: all 500ms;
 }
 
-.articles__blog a {
-    font-family: "BebasNeue";
-    font-size: 40px;
-    letter-spacing: 3px;
-    color: var(--color-text-title);
-    text-decoration: none;
-    /* transición */
+.article__description{
+    font-size: 16px;
+    text-align: center;
+    color: var(--color-bg);
+}
+
+.article__price{
+    text-align: center;
+    color: var(--color-primary);
+    font-size: 24px;
 }
 
 /* efecto de hover sobre articles__blog */
@@ -589,9 +511,8 @@ body {
 .content__footer {
     width: 100%;
     height: 470px;
-    background-color: black;
+    background-color: rgb(1, 32, 1);
     color: var(--color-text-white);
-    overflow: hidden;
 }
 
 .footer__wrap>div {
@@ -606,7 +527,7 @@ body {
 
 .content__footer a {
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--color-bg);
     /* transición */
 
 }

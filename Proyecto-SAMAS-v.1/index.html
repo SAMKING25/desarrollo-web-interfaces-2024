@@ -6,7 +6,7 @@
     <!-- user_scalable = no - es para que el usuario no pueda realizar zoom con los 2 dedos. -->
     <meta name="viewport" content="width=device-width, user-scalable=no"> 
     <title>Proyecto Web</title>
-    <link rel="shortcut icon" href="img/supertux.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/chrome.png" type="image/x-icon">
     <link rel="stylesheet" href="css/reset_estilos.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -44,157 +44,160 @@
             <div class="content__banner"></div>
             <!-- fin de Banner -->
             <!-- Inicio Tarjetas -->
+            <h1 class="title__cards">Ofertas Top</h1>
             <div class="content__cards">
                 <div class="cards__card">
                     <img class="card__topVentas" src="img/top-ventas1.jpg">
-                    <h2 class="card__category">Sillón</h2>
+                    <h2 class="card__category">Sillón chill-out</h2>
                     <p class="card__description">
-                        Aprende los principales lenguajes para desarrollar webs. !Conviértete en Web Master!
+                        68.99€
                     </p>
+                    <del>
+                        <p class="card__description del">99.99€</p>
+                    </del>
                 </div>
                 <div class="cards__card">
                     <img class="card__topVentas" src="img/top-ventas2.png">
                     <h2 class="card__category">Sofá Duplex</h2>
                     <p class="card__description">
-                        Aprende a administrar sistemas operativos linux y windows.
+                        866€
                     </p>
+                    <del>
+                        <p class="card__description del">1200€</p>
+                    </del>
                 </div>
                 <div class="cards__card">
-                    <img class="card__topVentas" src="img/top-ventas3.png">
-                    <h2 class="card__category">Lampara Blanca</h2>
+                    <img class="card__topVentas" src="img/top-ventas3.jpg">
+                    <h2 class="card__category">Lampara Alta</h2>
                     <p class="card__description">
-                        Conoce los entresijos del hardware.
+                        30.95€
                     </p>
+                    <del>
+                        <p class="card__description del">49.99€</p>
+                    </del>
                 </div>
                 <div class="cards__card">
-                    <img class="card__topVentas" src="img/top-ventas2.png">
-                    <h2 class="card__category">Redes e Internet</h2>
+                    <img class="card__topVentas" src="img/top-ventas4.png">
+                    <h2 class="card__category">Armario corredor</h2>
                     <p class="card__description">
-                        Aprende a configurar y administrar redes informáticas y servidores.
+                        725€
                     </p>
+                    <del>
+                        <p class="card__description del">999€</p>
+                    </del>
                 </div>
                 <div class="cards__card">
-                    <img class="card__topVentas" src="img/top-ventas1.jpg">
-                    <h2 class="card__category">Bases de Datos</h2>
+                    <img class="card__topVentas" src="img/top-ventas5.jpg">
+                    <h2 class="card__category">Butaca de exterior</h2>
                     <p class="card__description">
-                        Aprende a instalar y administrar bases de datos.
+                        55.99€
                     </p>
+                    <del>
+                        <p class="card__description del">89€</p>
+                    </del>
                 </div>
             </div>
             <!-- fin de Tarjetas -->
         </section>
         <!-- Inicio de Barra Lateral -->
-        <div class="clearfix"></div>
-        <aside class="content__lateral">
-            <h3 class="lateral__title">BUSCAR</h3>
-            <div class="lateral__search">
-                <form>
-                    <input type="text">
-                    <input type="button" value="L" class="search__icon">
-                </form>
-            </div>
-            <h3 class="lateral__title">LOGIN</h3>
-            <div class="lateral__login aside-box">
-                <form>
-                    <label class="lateral-box__user aside-box__icon">U</label>
-                    <input type="email">
-                    <label class="lateral-box__password aside-box__icon">w</label>
-                    <input type="password">
-                    <input type="submit" value="Entrar">
-                    <input type="reset" value="Limpiar">
-                    <a href="#">Regístrate aquí</a>
-                    <a href="#">Has olvidado tu contraseña?</a>
-                </form>
-            </div>
-            <h3 class="lateral__title">REDES SOCIALES</h3>
-            <div class="lateral__social aside-box">
-                <div class="social__twitter">
-                    <a href="#" class="social__icon">t</a>
-                    <p class="social__overlay">
-                        Twitter
-                    </p>
+        <h2 class="articles__title">NOVEDADES</h2>
+        <div class="content__general">
+            <!-- Inicio de los Artículos -->
+            <section class="content__articles">
+                <article class="articles__article">
+                    <div class="article__img">
+                        <img src="img/tumbona1-novedades.png">
+                    </div>
+                    <h3 class="article__name">Tumbona Turqueta</h3>
+                    <span class="article__description">Tumbona de exterior de madera maciza</span>
+                    <p class="article__price">159.99€</p>
+                </article>
+                <article class="articles__article">
+                    <div class="article__img">
+                        <img src="img/sofa1-novedades.png">
+                    </div>
+                    <h3 class="article__name">Sofá Gala</h3>
+                    <span class="article__description">Tumbona de exterior de madera maciza</span>
+                    <p class="article__price">1132€</p>
+                </article>
+                <article class="articles__article">
+                    <div class="article__img">
+                        <img src="img/silla1-novedades.png">
+                    </div>
+                    <h3 class="article__name">Silla Konna</h3>
+                    <span class="article__description">Silla beige con patas de madera de fresno</span>
+                    <p class="article__price">49.99€</p>
+                </article>
+                <article class="articles__article">
+                    <div class="article__img">
+                        <img src="img/mesa1-novedades.png">
+                    </div>
+                    <h3 class="article__name">Mesa Naaim</h3>
+                    <span class="article__description">Mesa redonda con acabado nogal</span>
+                    <p class="article__price">254.95€</p>
+                </article>
+                <article class="articles__article">
+                    <div class="article__img">
+                        <img src="img/silla2-novedades.png">
+                    </div>
+                    <h3 class="article__name">Silla Forcanera</h3>
+                    <span class="article__description">Sillón de madera maciza para exteriores</span>
+                    <p class="article__price">89€</p>
+                </article>
+                <article class="articles__article">
+                    <div class="article__img">
+                        <img src="img/lampara1-novedades.png">
+                    </div>
+                    <h3 class="article__name">Lámpara Ciral</h3>
+                    <span class="article__description">Lámpara de decoración Infantil</span>
+                    <p class="article__price">19.99€</p>
+                </article>
+            </section>
+            <!-- FIN ARTICULOS -->
+
+            <aside class="content__lateral">
+                <h3 class="lateral__title">LOGIN</h3>
+                <div class="lateral__login aside-box">
+                    <form>
+                        <label class="lateral-box__user aside-box__icon">U</label>
+                        <input type="email" placeholder="Introduce el email..">
+                        <label class="lateral-box__password aside-box__icon">w</label>
+                        <input type="password" placeholder="Introduce el contraseña..">
+                        <input type="submit" value="Entrar">
+                        <input type="reset" value="Limpiar">
+                        <a href="#" class="login__submenu">Regístrate aquí</a>
+                        <a href="#" class="login__submenu">Has olvidado tu contraseña?</a>
+                    </form>
                 </div>
-                <div class="social__facebook">
-                    <a href="#" class="social__icon">f</a>
-                    <p class="social__overlay">
-                        Facebook
-                    </p>
+                <h3 class="lateral__title">EQUIPO DE TRABAJO</h3>
+                <div class="lateral__team aside-box">
+                    <div class="team__member">
+                        <img src="img/ProjectManager.jpg">
+                        <h4>Project Manager</h4>
+                    </div>
+                    <div class="team__member">
+                        <img src="img/ScrumMaster.jpg">
+                        <h4>Scrum Master</h4>
+                    </div>
+                    <div class="team__member">
+                        <img src="img/DiseñadorUX-UI.jpg">
+                        <h4>Diseñador UX/UI</h4>
+                    </div>
+                    <div class="team__member">
+                        <img src="img/DesarrolladorSoftware.jpg">
+                        <h4>Desarrollador Software</h4>
+                    </div>
+                    <div class="team__member">
+                        <img src="img/DesarrolladorSoftwar2.jpg">
+                        <h4>Desarrollador Software</h4>
+                    </div>
+                </div>   
+                <h3 class="lateral__title">PATROCINADORES</h3>
+                <div class="lateral__sponsors aside-box">
                 </div>
-                <div class="social__youtube">
-                    <a href="#" class="social__icon">y</a>
-                    <p class="social__overlay">
-                        Youtube
-                    </p>
-                </div>
-            </div>
-            <h3 class="lateral__title">PATROCINADORES</h3>
-            <div class="lateral__sponsors aside-box">
-            </div>
-        </aside>
-        <!-- fin de Aside -->
-        <!-- Inicio de los Artículos -->
-        <section class="content__articles">
-            <h2 class="articles__title">Últimos artículos</h2>
-            <div class="clearfix"></div>
-            <article class="articles__article">
-                <div class="article__datos">
-                    <span>Fecha: 01 de enero</span>
-                    <span>Categoría: Pruebas</span>
-                </div>
-                <h4 class="article__subtitle">
-                    <a href="#">Título de artículo 1</a>
-                </h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-            </article>
-            <article class="articles__article">
-                <div class="article__datos">
-                    <span>Fecha: 01 de febrero</span>
-                    <span>Categoría: Pruebas</span>
-                </div>
-                <h4 class="article__subtitle">
-                    <a href="#">Título de artículo 2</a>
-                </h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-            </article>
-            <article class="articles__article">
-                <div class="article__datos">
-                    <span>Fecha: 01 de marzo</span>
-                    <span>Categoría: Pruebas</span>
-                </div>
-                <h4 class="article__subtitle">
-                    <a href="#">Título de artículo 3</a>
-                </h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-            </article>
-            <article class="articles__article">
-                <div class="article__datos">
-                    <span>Fecha: 01 de abril</span>
-                    <span>Categoría: Pruebas</span>
-                </div>
-                <h4 class="article__subtitle">
-                    <a href="#">Título de artículo 4</a>
-                </h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-            </article>
-            <article class="articles__article">
-                <div class="article__datos">
-                    <span>Fecha: 01 de agosto</span>
-                    <span>Categoría: Pruebas</span>
-                </div>
-                <h4 class="article__subtitle">
-                    <a href="#">Título de artículo 5</a>
-                </h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, dolores. Consequatur quis tenetur, modi quod quam repellat facilis minus molestias dicta eum ex voluptatibus itaque necessitatibus, possimus quas? Fugiat, veritatis!</p>
-            </article>
-            <article class="articles__blog">
-                <a href="#">Ir al Blog</a>
-            </article>
-        </section>
+            </aside>
+            <!-- fin de Aside -->
+        </div>
         <!-- fin de los Artículos -->
     </main>
     <div class="clearfix"></div>
