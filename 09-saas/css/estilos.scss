@@ -1,0 +1,35 @@
+//  variables 
+$b: 'body';
+$color-fondo: #ccc;
+$color-letra: black;
+$color-letra2: rgb(3, 97, 3);
+$color-fondo2: blue;
+
+body{
+    background-color: $color-fondo;
+}
+
+h1{
+    color: $color-letra;
+    background-color: $color-fondo2;
+}
+
+/* Anidacion */ 
+.caja{
+    border: 1px solid black;
+    margin: 0px auto;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    
+    h2{
+        color: $color-letra2;
+    }
+    .info{
+        border: 1px sold black;
+        h2{
+            color: $color-letra;
+            font-size: 18px;
+        }
+    }
+}

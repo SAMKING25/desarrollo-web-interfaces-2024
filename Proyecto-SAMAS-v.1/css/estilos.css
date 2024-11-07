@@ -79,7 +79,7 @@ body {
     background-color: var(--color-bg);
     font-family: "BebasNeue";
     color: var(--color-text-white);
-    box-shadow: 0px 4px 5px 0px #000000;
+    box-shadow: 0px 4px 5px 0px var(--color-box-shadow2);
     z-index: 5;
 }
 
@@ -114,12 +114,6 @@ body {
         transform: translateY(-250%);
     }
 }
-
-/* efecto hover en Logo */
-
-
-/* efecto de desaparece y vuelve keyframes */
-
 
 .header__menu {
     height: 70px;
@@ -164,6 +158,7 @@ body {
     height: 40px;
     border-radius: 50%;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .search__icon:hover {
@@ -198,6 +193,7 @@ body {
     height: 600px;
     margin-top: 1px;
     z-index: -1;
+    overflow: hidden;
     background-image: url("../img/foto-banner.jpg");
     background-size: 100% 100%;
     animation: bannerCambio infinite 15s;
@@ -229,8 +225,8 @@ body {
 .cards__card{
     width: 200px;
     height: 360px;
-    border: 1px solid var(--color-backgroung);
-    box-shadow: 0px 3px 5px var(--color-box-shadow);
+    /* border: 1px solid var(--color-backgroung); */
+    box-shadow: 1px 3px 5px var(--color-focus);
     overflow: hidden;
     margin: 22px;
     margin-top: 40px;
@@ -242,16 +238,14 @@ body {
 
 .cards__card:hover{
     background-color: var(--color-bg);
-    box-shadow: 0px 4px 4px var(--color-box-shadow2);
+    box-shadow: 1px 4px 5px var(--color-focus);
+    transform: scale(1.06);
 }
 
 .card__topVentas{
-    width: 600px;
+    height: 190px;
+    width: 500px;
     overflow: hidden;
-}
-
-.cards__card:hover .card__topVentas{
-    transform: scale(1.1);
 }
 
 .card__category{
