@@ -22,7 +22,7 @@
  definimos familia de fuente que voy a utilizar */
 :root {
     --mx-width: 1240px;
-    --color-primary:#304d02 ;
+    --color-primary:rgb(37, 64, 37) ;
     --color-secondary: #eafde6;
     --color-backgroung: #ccc;
     --color-bg: #519548;
@@ -45,6 +45,7 @@ html {
 
 body {
     font-family: sans-serif;
+    background: linear-gradient(to bottom, var(--color-secondary) 0%, #b0e1a5 100%); ;
 } 
    
 
@@ -329,7 +330,7 @@ body {
     font-weight: normal;
     letter-spacing: 2px;
     padding-left: 15px;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
@@ -413,7 +414,7 @@ body {
     display: block;
     text-decoration: none;
     margin-left: 18px;
-    font-size: 14px;
+    font-size: 14px;    
     color: var(--color-bg);
 }
 
@@ -423,17 +424,38 @@ body {
 
 .team__member{
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 200px;
+    width: 240px;
 }
 .team__member img{
     border-radius: 50%;
+    width: 100px;
     border: 2px solid black;
 }
-.team__member h4{
+.member__name{
+    display: grid;
     text-align: center;
+    align-items: center;
+    margin-left: 10px;
+    /* width: 130px; */
+    font-weight: bold;
+}
+
+.lateral__social{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 125px;
+}
+.lateral__social img{
+    width: 
+    70px;
+}
+
+.lateral__social img:hover{
+    transform: scale(1.18);
 }
 
 /* FIN ASIDE */
@@ -464,7 +486,8 @@ body {
 
 .articles__article {
     display: grid;
-    grid-template-rows: 1fr 5% 10% 20%;
+    grid-template-rows: 75% 5% 10% 10%;
+    overflow: hidden;
     width: 280px;
     height: 580px;
     margin: 0px 4px 8px;
@@ -511,41 +534,41 @@ body {
 .content__footer {
     width: 100%;
     height: 470px;
-    background-color: rgb(1, 32, 1);
-    color: var(--color-text-white);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
-.footer__wrap>div {
-    float: left;
-    width: 25%;
+.footer__wrap{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.footer__wrap > div {
     height: 370px;
     margin: 40px;
     text-align: center;
-    color: var(--color-text-white);
+    color: var(--color-secondary);
     font-family: "TrebuchetMS";
 }
-
 .content__footer a {
     text-decoration: none;
-    color: var(--color-bg);
-    /* transición */
-
+    color: var(--color-secondary);
 }
 
 .footer__title {
-    display: block;
-    background: url("../img/pxgray.png"), var(--color-text-white);
+    background: var(--color-secondary);
     height: 50px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
     font-family: "BebasNeue";
     font-size: 40px;
     line-height: 55px;
-    color: black;
+    color: var(--color-primary);
     border-radius: 5px;
     margin-bottom: 15px;
 }
 
+/* 1º COLUMNA FOOTER */
 .footer__list {
     text-align: left;
     margin: 20px;
@@ -555,18 +578,43 @@ body {
 .footer__list li {
     margin-top: 10px;
     padding: 5px;
-    border-bottom: 1px solid var(--color-backgroung);
+}
+.list__services:hover{
+    transform: scale(1.1);
+}
+.list__services::before{
+    content: "";
+    position: absolute;
+    height: 0.07rem;
+    background-color: var(--color-secondary);
+    bottom: 0.7rem;
+    left: 3px;
+    width: 0%;
+    opacity: 0;
+    transition: all 350ms linear;
+}
+.list__services:hover:nth-child(1)::before{
+    width: 90%;
+    opacity: 1;
+}
+.list__services:hover:nth-child(2)::before{
+    width: 62%;
+    opacity: 1;
+}
+.list__services:hover:nth-child(3)::before{
+    width: 75%;
+    opacity: 1;
+}
+.list__services:hover:nth-child(4)::before{
+    width: 45%;
+    opacity: 1;
+}
+.list__services:hover:nth-child(5)::before{
+    width: 60%;
+    opacity: 1;
 }
 
-.footer__list li a {
-    display: block;
-    height: 40px;
-    /* transición */
-}
-
-/* efecto de hover sobre cada li */
-
-
+/* 2º COLUMNA FOOTER */
 .content__footer iframe {
     width: 100%;
     height: 300px;
@@ -580,13 +628,31 @@ body {
     margin-bottom: 15px;
 }
 
-.footer__browsers img {
-    width: 45px;
+/* 3º COLUMNA FOOTER */
+.info__payments{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    align-items: center;
+    height: 100px;
 }
 
-/* Animaciones y Transiciones
-- Propiedad Animation
-- Keyframes
-- Transitions 
+.info__partners{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    align-items: center;
+    height: 100px;
+}
 
-Indico cada punto aplicado como efecto*/
+.footer__info img{
+    height: 68px;
+    cursor: pointer;
+}
+.footer__info img:hover{
+    transform: scale(1.15);
+}
+
+.footer__info p{
+    font-size: 15px;
+}
