@@ -1,39 +1,334 @@
-/* del 0 al 1245px aplico esto */
-@media (max-width: 1230px){ 
+/* Visionado para tablets */
+@media (max-width: 1024px){
+    /* HEADER */
+    .header{
+        height: 100px;
+    }
+    
+    .header__wrap{
+        grid-template-columns: 300px 700px;
+        justify-content: flex-start;
+    }
+    .header__logo{
+        width: 250px;
+    }
+    .header__logo h3{
+        font-size: 60px;
+    }
+    .header__menu {
+        height: 100px;
+    }
+    .menu__list{
+        margin-top: 18px;
+    }
+    .menu__list li{
+        font-size: 35px;
+    }
+    .header__search{
+        top: 12px;
+    }
+    .search__icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .header__search:hover .search__text {
+        width: 180px;
+        height: 25px;
+    }
 
+    /* FIN HEADER */
+
+    /* BANNER */
+    .content__banner{
+        width: 1024px;
+    }
+    /* FIN BANNER */
+
+    /* TARJETAS */
+    .title__cards{
+        width: 980px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .content__cards{
+        width: 1024px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .cards__card{
+        width: 300px;
+        height: 460px;
+        margin: 10px;
+        margin-bottom: 13px;
+    }
+    .card__topVentas{
+        height: 285px;
+        width: 285px;
+        margin: 5px;
+    }
+    /* FIN CARTAS */
+
+    /* Contenido General */
+    .content__general{
+        grid-template-columns: 1fr;
+        grid-template-rows: 43% 1fr;
+        width: 1000px;
+        height: 2850px;
+    }
+
+    /* ARTICULOS */
+    .articles__title{
+        width: 980px;
+        margin-left: 10px;
+    }
+    .content__articles{
+        width: 1024px;
+    }
+    .articles__article{
+        width: 310px;
+        grid-template-rows: 72% 8% 10% 10%;
+    }
+    .article__name{
+        font-size: 28px;
+        height: 40px;
+    }
+    .article__description{
+        font-size: 20px;
+    }
+    .article__price{
+        font-size: 30px;
+    }
+    /* FIN ARTICULOS */
+
+    /* BARRA LATERAL */
+    .content__lateral{
+        display: grid;
+        width: 1000px;
+        margin: 5px;
+        justify-items: center;
+    }
+    .box__login{
+        order: 1;
+        width: 860px;
+    }
+    .box__social{
+        order: 2;
+        width: 860px;
+    }
+    .box__team{
+        order: 3;
+        width: 860px;
+    }
+    .lateral__title{
+        font-size: 40px;
+    }
+
+    /* LATERAL LOGIN */
+    .lateral__login .lateral-box__user,
+    .lateral__login .lateral-box__password{
+        margin-left: 75px;
+    }
+    .lateral__login input[type="submit"],
+    .lateral__login input[type="button"],
+    .lateral__login input[type="reset"],
+    .lateral__login button {
+        width: 150px;
+        margin-left: 37px;
+    }
+    .login__submenu{
+        font-size: 18px;
+        margin-left: 37px;
+    }
+
+    /* LATERAL SOCIAL MEDIA */
+    .lateral__social img{
+        width: 100px;
+    }
+    .lateral__social img:hover{
+        transform: scale(1.1);
+    }
+
+    /* LATERAL TEAM */
+    .lateral__team{
+        height: 820px;
+    }
+    .team__member{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 15px;
+        width: 700px;
+    }
+    .team__member img{
+        width: 150px;
+    }
+    .member__name{
+        font-size: 25px;
+    }
+
+    /* FIN ASIDE */
+
+    /* FOOTER */
+    .content__footer {
+        width: 1024px;
+        height: 1500px;
+    }
+    .footer__wrap{
+        grid-template-columns: 1fr;
+    }
+    .footer__wrap > div {
+        margin: 15px;
+    }
+    .footer__title {
+        width: 980px;
+    }
+    .footer__location{
+        width: 980px;
+    }
+    .footer__info{
+        width: 980px;
+    }
+
+    .list__services:hover{
+        transform: scale(1.02);
+    }
+    .list__services:hover:nth-child(1)::before{
+        width: 23%;
+        opacity: 1;
+    }
+    .list__services:hover:nth-child(2)::before{
+        width: 16%;
+        opacity: 1;
+    }
+    .list__services:hover:nth-child(3)::before{
+        width: 19%;
+        opacity: 1;
+    }
+    .list__services:hover:nth-child(4)::before{
+        width: 12%;
+        opacity: 1;
+    }
+    .list__services:hover:nth-child(5)::before{
+        width: 15%;
+        opacity: 1;
+    }
+
+    .content__footer iframe {
+        width: 98%;
+    }
+    .info__payments{
+        height: 150px;
+    }
+    .info__partners{
+        height: 150px;
+    }
+    .footer__info img{
+        height: 100px;
+    }
+    .footer__info p{
+        font-size: 25px;
+    }
 }
 
-@media (max-width: 1079px){
-
-}
-@media (max-width: 969px){
- 
-}
-@media (max-width: 920px){
-
-}
-
-@media (max-width: 890px){
-
-}
-
-@media (max-width: 799px){
- 
-}
-/* movemos ya el menú y cambiamos estructura */
-@media (max-width: 800px){
-
-}
 /* Visionado para Móviles */
-@media (max-width: 660px){
- 
-}
-@media (max-width: 550px){
+@media (max-width: 600px){
+    /* HEADER */
+    .header{
+        height: 200px;
+    }
+    
+    .header__wrap{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 600px;
+        justify-content: space-around;
+    }
 
-}
+    /* FIN HEADER */
 
-@media (max-width: 470px){
- 
+    /* BANNER */
+    .content__banner{
+        width: 600px;
+    }
+    /* FIN BANNER */
+
+    /* TARJETAS */
+    .title__cards{
+        width: 580px;
+    }
+
+    .content__cards{
+        width: 600px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .cards__card{
+        width: 280px;
+    }
+    /* FIN CARTAS */
+
+    /* Contenido General */
+    .content__general{
+        width: 600px;
+    }
+
+    /* ARTICULOS */
+    .articles__title{
+        width: 580px;
+    }
+    .content__articles{
+        width: 600px;
+    }
+    .articles__article{
+        width: 290px;
+    }
+    /* FIN ARTICULOS */
+
+    /* BARRA LATERAL */
+    .content__lateral{
+        width: 600px;
+    }
+    .box__login{
+        width: 500px;
+    }
+    .box__social{
+        width: 500px;
+    }
+    .box__team{
+        width: 500px;
+    }
+
+    /* LATERAL LOGIN */
+    .lateral__login .lateral-box__user,
+    .lateral__login .lateral-box__password{
+        margin-left: 50px;
+    }
+
+    /* LATERAL TEAM */
+    .lateral__team{
+        height: 670px;
+    }
+    .team__member{
+        width: 400px;
+    }
+    .team__member img{
+        width: 120px;
+    }
+    /* FIN ASIDE */
+
+    /* FOOTER */
+    .content__footer {
+        width: 600px;
+        height: 1500px;
+    }
+    .footer__title {
+        width: 570px;
+    }
+    .footer__location{
+        width: 570px;
+    }
+    .footer__info{
+        width: 570px;
+    }
 }
 
 
