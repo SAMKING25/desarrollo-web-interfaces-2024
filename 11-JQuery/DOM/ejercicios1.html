@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIOS DOM</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <p>Ejercicio 1</p>
+    <input type="text" id="cajaTexto">
+    <p>Ejercicio 2 y 3</p>
+    <div class="producto">Cambio a azul</div>
+    <p>Ejercicio 4</p>
+    <div id="titulo">Cambio a rojo</div>
+    <p>Ejercicio 6</p>
+    <ul id="lista">
+    </ul>
+    <p>Ejercicio 7</p>
+    <textarea id="descripcion"></textarea>
+    <p>Ejercicio 8</p>
+    <div class="clase">HOLA 1</div>
+    <div class="clase">HOLA 2</div>
+    <div class="clase">HOLA 3</div>
+    <p>Ejercicio 9</p>
+    <div class="eliminar">ADIOS 1</div>
+    <div>ADIOS 2</div>
+    <div class="eliminar">ADIOS 3</div>
+    <p>Ejercicio 10</p>
+    <div id="contenedor">
+        <span>UNO</span>
+        <span>DOS</span>
+        <p>tres</p>
+    </div>
+    <script>
+        // 1-Selecciona el elemento con la clase .item y cámbiale el texto.
+            $("#cajaTexto").click(function (e) {
+                $(this).val("Hola chicos");
+            })
+        // 2-Selecciona el primer elemento con la clase .producto y cambia su color de fondo a azul.
+            $(".producto").css("background", "blue");
+        // 3-Accede al primer <div> de la página y agrega el texto "Hola Mundo".
+            $('div:first').text("Hola mundo");
+        // 4-Selecciona el elemento con id #titulo y cambia su color a rojo.
+            $("#titulo").css("color", "red");
+        // 5-Accede a todos los elementos <p> en la página y cambia su tamaño de fuente a 18px.
+            $('p').css('font-size', '20px');
+        // 6-Añade un nuevo elemento <li> al final de una lista con id #lista.
+            $('#lista').append("<li>Ultima</li>");
+            $('#lista').prepend("<li>Primero</li>");
+        // 7-Accede al contenido del elemento con id #descripcion y muestra el valor en consola.
+            $("#descripcion").keypress(function (e) {
+                console.log($(this).val());
+            });
+        // 8-Obtén todos los elementos con la clase .carta y cambia su color de borde a verde.
+            $(".clase").css("border", "3px solid green");
+        // 9-Elimina todos los elementos con la clase .eliminar.
+            $(".eliminar").remove();
+        // 10-Selecciona todos los <span> dentro de un <div> con id #contenedor y cambia su color de fondo a gris.
+            $("#contenedor span").css("background", "grey");
+    </script>
+</body>
+
+</html>

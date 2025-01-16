@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>...</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#cajaTexto").keypress(function (e) {
+                e.preventDefault();
+                $("#teclaPulsada").html(e.which + ": " + String.fromCharCode(e.which))
+            });
+        })
+    </script>
+</head>
+<body>
+    <h1>Detección teclas</h1>
+    <form>
+        <textarea cols=220 rows=2 id="cajaTexto">Introduce una cadena de texto</textarea>
+        <br>
+        <b>Se ha pulsado la tecla</b>
+        <div id="teclaPulsada"></div>
+    </form>
+</body> 
+</html>

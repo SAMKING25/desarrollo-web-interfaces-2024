@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <h2>Ejercicio 11</h2>
+    <div class="foto">Soy una foto</div>
+    <div>foto sin ocultar</div>
+    <h2>Ejercicio 12 y 14</h2>
+    <div id="rojos">
+        <h3>rojito</h3>
+        <h3>rojito</h3>
+    </div>
+    <h2>Ejercicio 13</h2>
+    <input type="text">
+    <h2>Ejercicio 15</h2>
+    <nav>
+        <a>aa</a>
+        <a>aa</a>
+    </nav>
+    <h2>Ejercicio 17</h2>
+    <img src="#" id="imagen">
+    <h2>Ejercicio 18</h2>
+    <div class="producto">Producto 1</div>
+    <div class="producto">Producto 2</div>
+    <div class="producto">Producto 3</div>
+    <h2>Ejercicio 19</h2>
+    <input type="text" id="nombre">
+    <script>
+        // 11-Selecciona todos los elementos con la clase .foto y ocúltalos.
+            $('.foto').hide();
+        // 12-Añade un borde rojo a todos los elementos <h1> dentro de un <div>.
+            $('#rojos h3').css('border','2px solid red')
+        // 13-Accede a todos los elementos de tipo <input> y establece su valor como "Texto predeterminado".
+            $('input').val('Texto predeterminado')
+        // 14-Selecciona el segundo <div> en el documento y cámbiale el fondo a amarillo.
+            $('div:eq(1)').css("background","yellow");
+        // 15-Añade un class llamado activo a todos los <a> dentro de un <nav>.
+            $('nav a').addClass("activo")
+        // 16-Inserta un nuevo párrafo al principio del <body> con el texto "Bienvenido".
+            $("body").prepend("<p>Ejercicio 16</p>")
+        // 17-Cambiar el src de una imagen con id #imagen a una nueva URL.
+            $("#imagen").attr("src","../../10-boostrap/img/007.jpg")
+            $("#imagen").width("100")
+        // 18-Establece un atributo data-id en todos los elementos con la clase .producto.
+            for(let i=0; i < $(".producto").length; i++){
+                $(".producto:eq("+i+")").attr("data-id",i);
+            }    
+        // 19-Cambiar el valor de un <input> con id #nombre a "Juan Pérez".
+            $("#nombre").val("Juan Perez")
+        // 20-Añadir un título en el <head> que diga "Página Web Interactiva".
+            $('head').append("<title>Pagina Web Interactiva</title>")
+    </script>
+</body>
+
+</html>
