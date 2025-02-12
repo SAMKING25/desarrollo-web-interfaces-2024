@@ -1,0 +1,12 @@
+img{
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border: 2px solid black;
+    display: flex;
+    align-Items: center;
+    justify-Content: center;
+    cursor: pointer;
+    background-Color: #f0f0f0;
+    border-Radius: 10px;
+  }
