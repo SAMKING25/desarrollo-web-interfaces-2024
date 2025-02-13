@@ -23,11 +23,11 @@ function App() {
       precio: 150
     }
   ]
-  const [nombre, setNombre] = useState("");
+  const [nombre, setNombre] = useState("nadie");
   const [precio, setPrecio] = useState(0);
 
   const manejarClick = (nuevoNombre, nuevoApellido, nuevoPrecio) => {
-    if (nombre === "") {
+    if (nombre === "nadie") {
       setNombre(nuevoNombre + " " + nuevoApellido);
     } else {
       setNombre(nuevoNombre+" "+nuevoApellido+", "+nombre);
